@@ -47,20 +47,27 @@ var secondHand = document.getElementById("second");
 var minuteHand = document.getElementById("minute"); 
 var hourHand = document.getElementById("hour");
 
-function setSecondHand(){
+// function setSecondHand(){
+//   secondHand.style.transform = "rotate(" + seconds + "deg)";
+// }
+// setSecondHand();
+
+// function setMinuteHand(){
+//   minuteHand.style.transform = "rotate(" + (minutes*6) + "deg)";
+// }
+// setMinuteHand();
+
+// function setHourHand(){
+//   hourHand.style.transform = "rotate(" + (hours*30) + "deg)";
+// }
+// setHourHand();
+
+function setHands(){
   secondHand.style.transform = "rotate(" + seconds + "deg)";
-}
-setSecondHand();
-
-function setMinuteHand(){
   minuteHand.style.transform = "rotate(" + (minutes*6) + "deg)";
-}
-setMinuteHand();
-
-function setHourHand(){
   hourHand.style.transform = "rotate(" + (hours*30) + "deg)";
 }
-setHourHand();
+setHands();
 
 
 function moveSecondHand(){
