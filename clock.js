@@ -5,7 +5,6 @@
 //   var minutes = date.getMinutes();
 //   var hours = date.getHours();
 
-var degrees = 1; 
 
 
 function rotateSecondHand(){
@@ -23,9 +22,9 @@ function rotateMinuteHand(){
   var minuteHand = document.getElementById("minute");
   var counter = 0;
   var loop = setInterval(function(){
-    counter++
+    counter+=6;
     minuteHand.style.transform = "rotate(" + counter + "deg)";
-  }, 60000);
+  }, 60000); 
 }
 
 rotateMinuteHand();
@@ -34,9 +33,9 @@ function rotateHourHand(){
   var hourHand = document.getElementById("hour");
   var counter = 0;
   var loop = setInterval(function(){
-    counter++
+    counter+=30;
     hourHand.style.transform = "rotate(" + counter + "deg)";
-  }, 3.6e+6);
+  }, 3.6e+6); 
 }
 
 rotateHourHand();
