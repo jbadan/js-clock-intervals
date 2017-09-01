@@ -91,8 +91,8 @@ moveMinuteHand();
 function moveHourHand(){
   var counter = hours;
   setInterval(function(){
-    counter +=30;
+    counter +=6;
     hourHand.style.transform = "rotate(" + counter + "deg)";
-  }, 3.6e+6);
+  }, 720000); //move 6 degrees every 12 minutes --- 6*5=30; 60/5= 12
 }
 moveHourHand();
